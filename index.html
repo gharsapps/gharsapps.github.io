@@ -4,21 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ghars Apps</title>
+<meta name="description" content="Ghars Apps makes gentle, ad-free learning apps for young children, starting with Huroof Garden: the Quran's Arabic letters through play.">
+<link rel="icon" href="huroof-garden/icon.png">
 <style>
-  :root { --bg: #fbf8f1; --text: #24302a; --muted: #5d6b63; --accent: #2f7d55; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #141a17; --text: #e8eee9; --muted: #a3b1a8; --accent: #7cc9a0; } }
+  :root { --bg: #fbf8f1; --text: #233142; --muted: #5d6b63; --accent: #3E8E41; --card: #ffffff; --line: #e6e0d2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141a17; --text: #e8eee9; --muted: #a3b1a8; --accent: #7cc9a0; --card: #1c2420; --line: #2c3631; }
+  }
+  * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
-  h1 { margin: 0 0 4px; } p { color: var(--muted); } a { color: var(--accent); }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  header p { color: var(--muted); margin-top: 4px; }
+  h1 { margin: 0; font-size: 2rem; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin-top: 28px; }
+  .app img.banner { width: 100%; display: block; }
+  .app .body { padding: 20px 22px 24px; }
+  .app h2 { margin: 0 0 6px; display: flex; align-items: center; gap: 12px; }
+  .app h2 img { width: 48px; height: 48px; border-radius: 12px; }
+  ul { padding-left: 22px; margin: 12px 0; }
+  li { margin-bottom: 6px; }
+  .links a { margin-right: 18px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.95rem; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Ghars Apps</h1>
-  <p>Gentle learning apps for young children.</p>
-  <h2>Huroof Garden</h2>
-  <p>Learn the letters of the Quran through play. <a href="huroof-garden/privacy.html">Privacy policy</a></p>
+  <header>
+    <h1>Ghars Apps</h1>
+    <p>Gentle learning apps for young children. Ghars (غرس) means planting: we plant a love for
+    learning early, one small step at a time.</p>
+  </header>
+
+  <section class="app">
+    <img class="banner" src="huroof-garden/feature.png" alt="Huroof Garden: learn the Quran's Arabic letters through playful games">
+    <div class="body">
+      <h2><img src="huroof-garden/icon.png" alt="">Huroof Garden</h2>
+      <p>Children aged 3 to 7 learn the 28 Arabic letters of the Quran through play, with every letter
+      spoken by a real Qaida teacher.</p>
+      <ul>
+        <li>Pop the Sound, Trace It, and Huroof Highway's three car games</li>
+        <li>Letters unlock step by step, and every star grows a flower in the garden</li>
+        <li>No ads, no in-app purchases, no accounts</li>
+        <li>Collects no data and works fully offline</li>
+      </ul>
+      <p class="links"><a href="huroof-garden/privacy.html">Privacy policy</a></p>
+    </div>
+  </section>
+
+  <footer>
+    Questions or feedback: <a href="mailto:baraqahllc24@gmail.com">baraqahllc24@gmail.com</a><br>
+    © 2026 Ghars Apps
+  </footer>
 </main>
 </body>
 </html>
